@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #0F0F1A;
+    font-family: 'Dancing Script', cursive;
+    overflow-x: hidden;
+}
+
+.greeting {
+    position: absolute;
+    z-index: 9999;
+    top: 20%;
+    height: 250px;
+    opacity: 0;
+    font-size: 0px;
+    animation: greeting-load 2000ms ease-out 1300ms;
+    animation-fill-mode: forwards;
+}
+
+.container1,
+.container3 {
+    width: 25%;
+    height: 94vh;
+    opacity: 1;
+    transform: translateY(150%);
+    background-image: url(/images/fireworks10.jpeg);
+    background-repeat: no-repeat;
+    background-size: 520px;
+    background-position: center;
+    animation: firework-load 2000ms ease-out;
+    animation-fill-mode: forwards;
+    display: flex;
+    justify-content: left;
+    cursor: pointer;
+}
+
+
+.container1 {
+    background-image: url(/images/fireworks10left.jpeg);
+}
+
+.container2 {
+    width: 50%;
+    height: 100%;
+    background-color: #0F0F1A;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    position: relative;
+}
+
+.mode-buttons {
+    /* width: 425px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 9999;
+    top: 40vh;
+}
+
+.wand-of-light {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: lightpink;
+    font-family: 'Dancing Script', cursive;
+    background: none;
+    cursor: pointer;
+    opacity: 0;
+    animation: WOL-button-load 3000ms 3000ms;
+    animation-fill-mode: forwards;
+}
+
+
+.card-content {
+    position: absolute;
+    z-index: 9999;
+    font-family: 'Dancing Script', cursive;
+    top: 20px;
+    font-size: 55px;
+    opacity: 0;
+    height: 150px;
+    padding-top: 15px;
+    max-width: 900px;
+    text-align: left;
+
+}
